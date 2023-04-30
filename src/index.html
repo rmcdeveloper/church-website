@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="/church/dist/output.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- NavBar-->
+		<div class="bg-slate-800">
+			<div class="container mx-auto">
+				<nav class="flex justify-between p-6 items-center">
+					<!-- Logo -->
+					<a href="/church/src/index.html">
+						<div class="flex space-x-1 text-white items-center">
+							<svg
+								class="fill-current h-8 w-8 mr-2"
+								width="54"
+								height="54"
+								viewBox="0 0 54 54"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
+								/>
+							</svg>
+
+							<span class="font-semibold text-xl">IAD</span>
+						</div>
+					</a>
+					<!-- End Logo-->
+					<!-- Sandwich button-->
+					<div class="flex md:hidden">
+						<button
+							class="mobile-menu-button flex items-center px-3 py-2 border text-white rounded text-right hover:bg-slate-600"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="w-6 h-6"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+								/>
+							</svg>
+						</button>
+					</div>
+					<!-- End sandwich button-->
+					<!-- Items -->
+					<div
+						class="items-center text-right hidden md:flex justify-between space-x-6"
+					>
+						<a
+							href="/church/src/index.html"
+							class="text-white text-md hover:text-cyan-300 mr-4"
+						>
+							Home
+						</a>
+						<a
+							href="/church/src/index.html"
+							class="text-white text-md hover:text-cyan-300 mr-4"
+						>
+							Novidades
+						</a>
+						<a
+							href="#events"
+							class="text-white text-md hover:text-cyan-300 mr-4"
+						>
+							Servicos
+						</a>
+						<a
+							href="#events"
+							class="text-white text-md hover:text-cyan-300 mr-4"
+						>
+							Eventos
+						</a>
+						<a
+							href="#aboutus"
+							class="text-white text-md hover:text-cyan-300 mr-4"
+						>
+							Sobre nos
+						</a>
+					</div>
+					<!-- End items-->
+				</nav>
+			</div>
+			<!--End of NavBar-->
+		</div>
+		<!-- Mobile Menu-->
+		<div class="mobile-menu hidden bg-slate-800">
+			<a
+				href="/church/src/index.html"
+				class="block text-white text-sm p-2 hover:bg-cyan-300 hover:text-black"
+			>
+				Home
+			</a>
+			<a
+				href="#news"
+				class="block text-white text-sm p-2 hover:bg-cyan-300 hover:text-black"
+			>
+				Novidades
+			</a>
+			<a
+				href="#events"
+				class="block text-white text-sm p-2 hover:bg-cyan-300 hover:text-black"
+			>
+				Servicos
+			</a>
+			<a
+				href="#events"
+				class="block text-white text-sm p-2 hover:bg-cyan-300 hover:text-black"
+			>
+				Eventos
+			</a>
+			<a
+				href="#events"
+				class="block text-white text-sm p-2 hover:bg-cyan-300 hover:text-black"
+			>
+				Sobre nos
+			</a>
+		</div>
+		<!-- End Mobile Menu-->
+
+		<div
+			class="relative overflow-hidden bg-no-repeat bg-cover h-screen"
+			style="
+				background-position: 50%;
+				background-image: url('./img/pedro-lima-IkqhfoJjwSI-unsplash.jpg');
+			"
+		>
+			<div
+				class="absolute w-full h-full overflow-hidden bg-fixed"
+				style="background-color: rgba(0, 0, 0, 0.5)"
+			>
+				<div class="flex justify-center items-center h-full">
+					<div class="text-center text-white px-6 md:px-12">
+						<h1 class="text-5xl font-semibold p-2 text-white leading-relaxed">
+							Bem-vindo(a) a Igreja Assembleia de Deus em Vancouver
+						</h1>
+						<p class="font-extralight text-3xl p-2 text-white">
+							Sua familia Crista no Canada
+						</p>
+						<div class="p-4">
+							<a
+								class="px-5 py-2 bg-transparent hover:bg-slate-800 transition-colors inline-block border-2 rounded ease-in-out"
+								href="#more"
+								>Saiba mais</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section>
+			<h1>News</h1>
+		</section>
+	</body>
+	<script>
+		const btn = document.querySelector("button.mobile-menu-button");
+		const menu = document.querySelector(".mobile-menu");
+
+		btn.addEventListener("click", () => {
+			menu.classList.toggle("hidden");
+		});
+	</script>
+</html>
